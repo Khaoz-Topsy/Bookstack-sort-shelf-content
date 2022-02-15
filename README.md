@@ -1,5 +1,7 @@
 # Bookstack sort shelf content
 
+You can use this snippet to sort the books on your shelves as well as sort the shelves in the shelves overview page 🎉.
+
 ### Reason
 I wanted to be able to sort books within my Bookstack shelf. Unfortunately this is not a feature within Bookstack, so I created this little JS snippet to do it.
 
@@ -21,7 +23,16 @@ When the books are ordered the sort drop down is also greyed out and disabled. S
  <script>
     const orders = [
         {
-            "path": "/shelves/it-services",
+            "path": "/shelves", // This is for the Shelves page
+            "items": [
+                { "dataId": 2 },
+                { "dataId": 6 },
+                { "dataId": 1 },
+                { "dataId": 3 },
+            ]
+        },
+        {
+            "path": "/shelves/it-services", // This is an example of ordering books on a shelf
             "items": [
                 { "dataId": 18 },
                 { "dataId": 9 },
@@ -35,7 +46,7 @@ When the books are ordered the sort drop down is also greyed out and disabled. S
                 { "dataId": 14 },
                 { "dataId": 19 },
             ]
-        }
+        },
     ];
 
     document.addEventListener("DOMContentLoaded", function () {
