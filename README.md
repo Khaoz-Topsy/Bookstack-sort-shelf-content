@@ -10,7 +10,7 @@ I wanted to be able to sort books within my Bookstack shelf. Unfortunately this 
 ## The snippet
 
 ### Explanation
-To use the snippet you need to change the config to your liking. The variable `orders` is a list of configs, a config should have a path and items. The path is the trailing part of the shelf's url. `items` is a list of objects that contain the `data-entity-id` value of the books in your shelf.
+To use the snippet you need to change the config to your liking. The variable `orders` is a list of configs, a config should have a path and items. The path is the trailing part of the shelf's url. `items` is a list of objects that contain the `data-entity-id` value of the books in your shelf. The position of the items in this list is what determines the order the books will be displayed in
 
 #### Extras
 The `<style>` at the bottom sets the default order for all items. You may want to change this to a different number for your specific use case.
@@ -69,6 +69,9 @@ The `<style>` at the bottom sets the default order for all items. You may want t
 ### How to find the `data-entity-id`
 Open the inspector on the page, easiest way to do this is to right click on a book and then choose the `Inspect element` option like in the image below
 
-[inspect element](inspectElement.png)]
+![inspect element](./inspectElement.png)
 
+Then find your book's html (if you right clicked on the book and selected the `Inspect element` option, your book's html should be close to what is highlighted in the inspector as it opened)
+
+![data entity id](./dataEntityId.png)
 
