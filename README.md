@@ -60,7 +60,7 @@ When the books are ordered the sort drop down is also greyed out and disabled. S
             sort.style.opacity = 0.2;
             sort.style.pointerEvents = 'none';
         });
-        const cards = document.querySelectorAll(".book-content .grid-card");
+        const cards = document.getElementsByClassName("grid-card");
         for (const card of cards) {
             let dataId = card.getAttribute('data-entity-id');
             const orderConfigOrder = orderConfig.items.findIndex(item => item.dataId == dataId);
