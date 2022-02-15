@@ -69,5 +69,6 @@ The `<style>` at the bottom sets the default order for all items. You may want t
 ### How to find the `data-entity-id`
 Open the inspector on the page, easiest way to do this is to right click on a book and then choose the `Inspect element` option like in the image below
 
+[inspect element](inspectElement.png)]
 
 
