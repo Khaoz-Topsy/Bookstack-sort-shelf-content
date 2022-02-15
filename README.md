@@ -14,6 +14,7 @@ To use the snippet you need to change the config to your liking. The variable `o
 
 #### Extras
 The `<style>` at the bottom sets the default order for all items. You may want to change this to a different number for your specific use case.
+When the books are ordered the sort drop down is also greyed out and disabled. Since it will not really have an effect anymore.
 
 ### The HTML code
  ```html
